@@ -13,7 +13,7 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans Ethiopic","Nyala","Abyssinica SIL",system-ui,sans-serif;line-height:1.6}
-main{max-width:1100px;margin:0 auto;padding:16px}
+main{max-width:1400px;margin:0 auto;padding:16px}
 h1{font-size:1.4rem;margin:.2em 0}
 h2{font-size:1.1rem;margin:0 0 8px}
 p{margin:.3em 0;color:var(--muted)}
@@ -26,7 +26,7 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
 table{border-collapse:collapse;width:100%;font-size:.85rem}
 th,td{border:1px solid var(--line);padding:4px 6px;text-align:center;white-space:nowrap}
 th{background:var(--bg);font-weight:600}
-td.name,th.name{text-align:left;position:sticky;left:0;background:var(--surface);min-width:150px;z-index:1}
+td.name,th.name{text-align:left;position:sticky;left:0;background:var(--surface);min-width:180px;z-index:1}
 th.name{background:var(--bg)}
 td.d1{background:var(--ok);color:var(--okink);font-weight:600}
 td.dN{background:var(--dup);color:#fff;font-weight:700}
@@ -37,6 +37,10 @@ td.out{background:var(--bg);color:var(--muted)}
 .title{font-size:1.15rem;min-width:9em;text-align:center;font-weight:700}
 .hint{font-size:.8rem}
 tr.sum:hover{background:var(--bg);cursor:pointer}
+#grid{table-layout:fixed;min-width:920px}
+#grid th,#grid td{padding:3px 0;font-size:.78rem}
+#grid td.name,#grid th.name{width:200px;min-width:0;white-space:normal;padding:3px 6px;font-size:.8rem}
+#grid th:nth-child(2){width:70px;white-space:normal}
 </style>
 </head>
 <body>
